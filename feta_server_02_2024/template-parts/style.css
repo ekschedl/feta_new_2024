@@ -1,0 +1,1459 @@
+/* Theme Name: Feta-theme
+Author: Schedlberger  Ekaterina
+
+Version: 1.0 */
+
+
+@charset "UTF-8";
+
+/* BASE Styles*/
+
+
+  /* exo-2-300 - cyrillic */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 300;
+    src: url('assets/fonts/exo-2-v20-cyrillic-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('.assets/fonts/exo-2-v20-cyrillic-300.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* exo-2-regular - cyrillic */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/exo-2-v20-cyrillic-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/exo-2-v20-cyrillic-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* exo-2-600 - cyrillic */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    src: url('assets/fonts/exo-2-v20-cyrillic-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/exo-2-v20-cyrillic-600.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* exo-2-600italic - cyrillic */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Exo 2';
+    font-style: italic;
+    font-weight: 600;
+    src: url('assets/fonts/exo-2-v20-cyrillic-600italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/exo-2-v20-cyrillic-600italic.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* exo-2-900 - cyrillic */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 900;
+    src: url('assets/fonts/exo-2-v20-cyrillic-900.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/exo-2-v20-cyrillic-900.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* exo-2-900italic - cyrillic */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Exo 2';
+    font-style: italic;
+    font-weight: 900;
+    src: url('assets/fonts/exo-2-v20-cyrillic-900italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/exo-2-v20-cyrillic-900italic.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* shantell-sans-300 - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Shantell Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url('assets/fonts/shantell-sans-v4-cyrillic_latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/shantell-sans-v4-cyrillic_latin-300.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* shantell-sans-300italic - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Shantell Sans';
+    font-style: italic;
+    font-weight: 300;
+    src: url('assets/fonts/shantell-sans-v4-cyrillic_latin-300italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/shantell-sans-v4-cyrillic_latin-300italic.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* shantell-sans-regular - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Shantell Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/shantell-sans-v4-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/shantell-sans-v4-cyrillic_latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* shantell-sans-600 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Shantell Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('assets/fonts/shantell-sans-v4-cyrillic_latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/shantell-sans-v4-cyrillic_latin-600.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* shantell-sans-600italic - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Shantell Sans';
+    font-style: italic;
+    font-weight: 600;
+    src: url('assets/fonts/shantell-sans-v4-cyrillic_latin-600italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/shantell-sans-v4-cyrillic_latin-600italic.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* shantell-sans-800 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Shantell Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: url('assets/fonts/shantell-sans-v4-cyrillic_latin-800.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/shantell-sans-v4-cyrillic_latin-800.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* shantell-sans-800italic - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Shantell Sans';
+    font-style: italic;
+    font-weight: 800;
+    src: url('assets/fonts/shantell-sans-v4-cyrillic_latin-800italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/shantell-sans-v4-cyrillic_latin-800italic.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/caveat-v17-cyrillic-ext_cyrillic-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/caveat-v17-cyrillic-ext_cyrillic-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* caveat-700 - cyrillic-ext_cyrillic */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('assets/fonts/caveat-v17-cyrillic-ext_cyrillic-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/caveat-v17-cyrillic-ext_cyrillic-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+ *,
+ *::before,
+ *::after {
+    box-sizing: border-box;
+ }
+
+ :root {
+    --base-bg-color: #fcfbf1 ;
+    --base-font-color: #f9f8f8;
+    --base-blue-brand:#e2e5e8;
+    --base-blue-max: #311c9b;
+    --base-blue-mx: #182388;
+    --base-gelb:#f1a205f5;
+    --base-red: rgb(229, 70, 42);
+    --base-green: #11ba33;
+    --base-blue-light: #0c8b9e;
+    --base-beige:#FFDAB9;
+    --base-beige-hover: #f5a865;
+    --base-brown: #a55108;
+    --base-font-dark:#171c4e;
+    --base-hover-span: #f9e8d9;
+    --base-brown-max: #633106;
+    --base-table-hover: #b98353;
+    --base-blue-max-hover: #4c37b3;
+
+    
+}
+
+html {
+ 
+    line-height: 1.4;
+    font-size: 17px;
+    scroll-behavior: smooth;
+
+}
+
+
+
+
+/* Headlines */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+   font-weight: 600;
+   font-family: 'Shantell Sans';
+   text-align: center;
+   color: var(--base-brown);
+   letter-spacing: 1.2px;
+   margin:50px auto;
+}
+
+
+h1 {
+   font-size: calc(2em+2vw);
+   color: var(--base-blue-max);
+   font-weight: 500;
+   font-family: 'Caveat';
+/*   text-shadow: 0 0 2px #fff, 
+   -1px -1px 0 hsl(194, 68%, 90%),
+   -2px -2px 1px hsl(204, 37%, 89%),
+   -2px -2px 2px hsl(80, 10%, 15%);
+}*/
+  
+   text-shadow:0px 13px 5px rgba(0,0,0,0.1), 
+   9px 9px 5px rgba(0,0,0,0.05), -9px 5px 5px rgba(0,0,0,0.05);
+}
+/*
+text-shadow: 1px 1px 3px rgb(216, 212, 212), -1px -1px 3px #FFF, 1px 1px #666, -1px -1px #FFF; color:var(--base-blue-max);}
+*/
+ 
+h2 {
+   font-size: calc(1.7em+2vw);
+ 
+}
+
+
+/* Anchor (Links) */
+a {
+    color: var(--base-blue-max-hover);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: var(--base-blue-light);
+}
+/* Anchor (ENde Links) */
+
+h3{
+    font-size: calc(1.2em+2vw);
+    margin:20px 0;
+
+}
+
+
+h4 {
+   font-size: 1.18em;
+}
+
+h5 {
+   font-size: 0.9em;
+}
+
+h6 {
+   font-size: 0.7em;
+}
+
+body {
+    margin:0;
+    padding: 0;
+    font-family: 'Exo 2';
+    background: linear-gradient(45deg, rgb(249, 246, 232) 10%, #ffe9c4 90%) fixed;
+    color: var(--base-font-dark);
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+
+}
+/*body {
+    For example, if we want the our font size in a range where 14px is the minimum size at the smallest viewport width of 300px and where 26px is the maximum size at the largest viewport width of 1600px, then our equation looks like this
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  }*/ 
+/*Images Figures responsive machen*/
+
+
+
+
+/*Navigation container*/
+
+.container {
+    display:flex;
+    min-width: 320px;
+    position: relative;
+    background-color:var(--base-blue-max);
+    height: 110px; 
+    top:0;
+    justify-content: space-between;
+    align-items: center;
+
+ }
+ #brand {
+    height: 110px;
+ }
+#brand img {
+    height: 80px;
+    border-radius: 50%;
+   
+    width: auto;
+    left:12px;
+    top: 10px;
+    position: relative;
+     outline: 5px solid var(--base-blue-max);
+    outline-offset: -5px;
+  padding: 5px;
+}
+
+#slogan {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    font-family: 'Shantell Sans';
+   font-size: calc(12px + 2vw);
+    font-weight: 600;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.yellow {
+    color: var(--base-gelb);
+    transition: all 0.2s ease-in-out;
+    }
+   
+.tomato {
+    color: var(--base-red);
+    transition: all 0.2s ease-in-out;
+}
+
+.blue_light {
+    color: var(--base-blue-light);  
+    transition: all 0.2s ease-in-out;  
+}
+
+.yellow:hover,
+.tomato:hover,
+.blue_light:hover {
+    color:var(--base-hover-span);
+    text-shadow: 0 0 0.2em rgb(209, 249, 205);
+}
+ 
+ /*_Menu-Button Toggle ___________________________*/
+#menu-button {
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.menu-button-icon {
+    width: 34px;
+    height: 2px;
+    background-color: var(--base-hover-span);
+    position: relative;
+    transition-duration: 0.2s;
+}
+
+.menu-button-icon:hover {
+    background-color:var(--base-beige); 
+   
+}
+   
+.menu-button-icon::before,
+.menu-button-icon::after {
+    content: "";
+    display: block;
+    width: 34px;
+    height: 2px;
+    background-color: var(--base-hover-span);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.2s;
+}
+.menu-button-icon:hover:before {
+    background-color:var(--base-beige); 
+   
+}
+
+.menu-button-icon:hover:after {
+    background-color:var(--base-beige); 
+  
+}   
+
+    
+.menu-button-icon::before {
+    transform: translateY(-12px);
+}
+
+.menu-button-icon::after {
+    transform: translateY(12px);
+}
+
+#menu-toggle:checked ~ #menu-button .menu-button-icon {
+    background-color: transparent;
+}
+
+#menu-toggle:checked ~ #menu-button .menu-button-icon::before {
+    transform: rotate(45deg);
+}
+
+#menu-toggle:checked ~ #menu-button .menu-button-icon::after {
+    transform: rotate(-45deg);
+}
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked ~ .nav-menu {
+    opacity:1; 
+    pointer-events: all;
+    transform: translateY(0px);
+}
+
+
+ /*_Menu-Button Toggle ______________________*/
+
+
+ .nav-menu{
+    opacity: 0;
+    list-style: none;
+    font-family: 'Shantell Sans';
+    font-size: clamp(1em, 2vw, 30px);
+    font-weight: 600;
+    z-index: 2000;
+    top: 110px;
+    height: 99vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+    background-color: var(--base-blue-max);
+
+    transform: translateY(10px);
+    transition: .5s ease-in-out; 
+}
+
+.nav-menu a{
+    color: var(--base-beige);
+    text-decoration: none;
+    display: block;
+    margin:0;
+    padding: 0;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    line-height: 90px;
+    transition: all 0.5s ease-out;
+} 
+
+
+.menu-item {
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.menu-item:hover a,
+.menu-item:active a {
+    color: var(--base-font-color);
+   transform: scale(1.2);
+}
+
+/*main____________*/
+.content-wrapper {
+    margin:0 20px;
+}
+
+section {
+    text-align: justify;
+    position: relative;
+    top:0;
+}
+
+ol,
+.charity-ol {
+    list-style-type: none;
+    padding:0;  
+}
+
+.charity-ol li:before,
+.partners li:before 
+{   
+    content: '\1F538';
+    font-family: 'icomoon';
+    color: var(--base-gelb);
+    font-weight: normal;
+    font-style:normal;
+    margin:0 10px;
+    text-decoration:none;
+    text-align: center;
+    font-size: smaller; 
+    display: inline-block;
+
+ }
+
+.partner {
+    background-color: var(--base-beige-hover);
+    border-radius: 5px;
+}
+
+/*ANimation Start */
+
+
+.js .animate {
+    opacity: 0;
+    transition: opacity 1s linear, transform 1s linear;
+    transition-delay: 250ms;
+    transform: translateY(1rem);
+}
+
+.js .animate.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*ANimation <Ende*/
+
+
+
+
+
+/*Section  container-lolli Start*/
+
+
+h2::after,  
+h2::before {
+    content: " \1F36D";
+   
+    text-align: center;
+    transition: all 0.7s;
+    font-size: smaller; 
+    margin:0 12px;
+    display: inline-block;
+    transform: rotate(45deg);
+   
+  }  
+  
+  
+/*
+  27E3  27E2   1F538 (128312)	🔸	diess in blau -(128313) ---- loli 1F36D
+   h2::before  {
+    content: "\223C";27E3
+font-size: smaller; 
+  }  
+   h2::after, h2::before {
+    content: "\1F36D"; 
+    display: inline-block;
+    transform: rotate(45deg);
+   
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.7s;
+  }*/
+
+  .name-lolli, .about-product{
+    font-family: 'Shantell Sans';
+     font-weight: 600;
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  .about-product{
+    font-weight: 400;
+    color: var(--base-brown);}
+
+.container-lolli {
+    display:flex;
+   
+  
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.container-image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow:hidden;   
+     width: 100%;
+    
+ 
+}
+.change-photos {
+    margin:0;
+    width: 100%;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-items: center;
+    padding: 10px 25px;
+    margin: 10px;
+    border-radius: 5px;
+    height: auto;
+  
+}
+
+.product img{ 
+    width: 100%;
+	height: auto;
+    
+    border-radius: 5px;
+    filter: saturate(90%);
+}
+ 
+ 
+
+
+.change-photo {
+    transition: all .340s ease-in-out;}
+
+
+/*Div hover  change-photos*/
+.change-photos .change-photo:nth-of-type(2) {
+    display: none;
+  }
+  
+.change-photos:hover .change-photo:nth-of-type(1) {
+  display: none;
+}
+
+.change-photos:hover .change-photo:nth-of-type(2) {
+  display: block;
+}
+
+.change-photos:hover {
+  cursor: pointer;
+}
+
+
+/*__________________*/
+
+input {
+    position: absolute;
+    display: none;
+    z-index: -1;
+}
+
+.container-tab {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.tab {
+    width: 100%;
+    color: var(--base-brown-hover);
+    overflow: hidden;
+ }
+
+.tab-label{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    padding: 10px auto;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    color: var(--base-brown);
+    
+}
+
+
+.tab-label::after {
+      content: "\276F";
+      width: 1em;
+      height: 1em;
+      text-align: center;
+      transition: all 0.7s ease-in-out;
+    }
+
+
+.tab-content {
+    max-height: 0;
+    width: 100%;
+    transition: all 1s;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+.product input[type="checkbox"]:checked ~ .tab-label::after
+
+
+{
+     transform: rotate(90deg);
+     color: var(--base-brown-max);
+ 
+}
+
+.product input[type="checkbox"]:checked ~ .tab-content{
+
+    max-height: 100%;
+  
+    opacity: 1; 
+    color: var(--base-font-dark);
+  
+}
+
+.product input[type="checkbox"]:checked ~ label .about-product
+ {
+    color: var(--base-brown-max);
+   
+}
+     
+/*----Lolli Tabelle */
+
+   
+table {
+    border-spacing: 0 1px;
+    padding: 0 0 10px;
+    
+}
+th, td {
+    text-align:left;
+    padding: 2px 2px 2px 10px;
+
+}
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius:10px;
+}
+table tr:first-child th:first-child,
+table tr:first-child td:first-child {
+    border-top-left-radius:10px;
+}
+table tr:first-child th:last-child,
+table tr:first-child td:last-child {
+    border-top-right-radius:10px;
+}
+tr:nth-child(even) { 
+    background-color: var(--base-hover-span);
+}
+tr:nth-child(odd) { 
+    background-color: var(--base-blue-brand);
+ }
+
+ .bold{ 
+    max-width: 30%;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: rgba(246, 168, 116, 0.6) ;
+    
+}
+
+/***** Buttons ***/
+
+
+.preis-btn {
+        width: 100%;
+        height: 50px;
+        color: var(--base-beige-hover);
+        border-radius: 10px;
+        padding: 10px;
+        font-family: 'Shantell Sans';
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+       
+        display: inline-block;
+         box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+         2px 2px 10px 0px rgba(0,0,0,.1),
+         2px 2px 5px 0px rgba(0,0,0,.1);
+        outline: none;
+
+        border: none;
+        text-align: center;
+        overflow: hidden;
+        margin: 0 0 10px;
+      }
+      .preis-btn a {
+        text-decoration: none;
+        color: var(--base-brown);
+      }
+      .preis-btn:focus a {
+        color: var(--base-brown-max);/*evtl andere Farbe*/
+        
+      }
+      .preis-btn:after {
+        position: absolute;
+        content: " ";
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+         background-color: var(--base-beige);
+      background-image: linear-gradient(315deg, rgb(250, 161, 92) 0%, #FFDAB9 74%);
+        transition: all 0.4s ease;
+      }
+      
+    .preis-btn:hover:after {
+        
+        transform: scale(2) rotate(180deg);
+        box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                    -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+          inset -4px -4px 6px 0 rgba(255,255,255,.5),
+          inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+      }
+    .preis-btn:active {
+        top: .1em;
+        left: .1em;
+        box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+    }
+    
+    .preis-btn.fehler {
+    text-align: center;
+    width: 33%;
+    color: var(--base-brown-max);
+    position: relative;
+    left: 33%;}
+/*----S--------Responsive */
+
+ @media only screen and (min-width: 450px) and (max-width: 575px) 
+ {
+ .product {
+    padding: 10px 20px;
+        
+       
+                   
+        }
+        .change-photos figure{
+            width: 410px;
+            margin: 0;
+            text-align: center;
+        }
+        }
+/*----M---------Responsive */
+@media only screen and (min-width: 576px) and (max-width: 768px) 
+{
+    .content-wrapper {
+        margin:0 10px;
+    }
+    .product  {
+     width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 5px;
+       
+        justify-content: space-between;
+   
+}
+    .container-image {
+         max-width: 49%;
+        flex-direction: column;
+    
+}
+
+   .container-tab{
+       max-width: 50%;
+       height:100%;
+}
+  
+   
+    .btn-div {
+        justify-content: flex-start;
+        gap:5px;
+        
+ }
+  
+ .change-photos figure {
+    width: 300px;
+    margin: 0;
+    text-align: center;
+}
+    .tab-label {
+        display: flex;
+        padding: 0;
+        justify-content: center;
+ }
+}
+ /*----L---------Responsive */
+
+@media screen and (min-width: 769px) and (max-width: 999px) {
+    .content-wrapper {
+        margin:0 30px;
+    }
+    
+    
+    .product {
+       
+         flex-direction: row;
+         align-items: flex-start;
+         padding: 5px;
+        justify-content: space-between;
+  
+     
+}
+
+    .container-image {
+        max-width: 54%;
+    
+}
+    .container-tab{
+        max-width: 45%;
+      
+}
+   
+    .tab-label {
+        display: flex;
+       padding: 0;
+       justify-content: center;
+ }
+    .btn-div {
+        justify-content: flex-start;
+    
+ }
+ .change-photos figure {
+    width: 410px;
+    margin: 0;
+    text-align: center;
+}
+ /*----<<<<Nav---------Responsive */
+#menu-button {
+    opacity: 0;
+}
+
+.nav-menu  {
+        opacity: 1;
+        height: fit-content;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: 480px;
+        top: -55px;
+        pointer-events: all;
+
+}
+#slogan {
+    width: 43%;
+}
+.nav-menu a {
+    line-height: 110px;
+    margin: 0 20px;
+}
+
+
+ .container {
+    justify-content: flex-start;
+   
+    gap:20px;
+}
+ /*----<<<<Nav---ENde---------Responsive */
+
+}
+
+
+@media screen and (min-width: 1000px) {
+    #brand img {
+        height: 100px;
+       
+        top: 0px;
+    }
+    .content-wrapper {
+        margin:0 80px;
+    }
+    
+    .product  {
+       
+         flex-direction: row;
+         align-items: flex-start;
+         padding: 20px;
+        justify-content: space-between;
+         max-width: 80%;
+     
+}
+
+    .container-image {
+        max-width: 56%;
+    
+}
+    .container-tab{
+        max-width: 42%;
+      
+}
+   
+    .tab-label {
+        display: flex;
+    padding:0;
+    justify-content: center;
+ }
+    .btn-div {
+        justify-content: flex-start;
+    
+ }
+     /*----<<<<Nav------XLL---Responsive */
+ 
+ #slogan {
+    width: 500px;
+ }
+ #nav-menu{ 
+  
+    top: -60px;
+     }
+    
+
+#menu-button {
+    opacity: 0;
+}
+
+.nav-menu  {
+        opacity: 1;
+        height: fit-content;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 700px;
+        top: -54px;
+        pointer-events: all;
+
+}
+.nav-menu a {
+    line-height: 110px;
+    margin: 0 20px;
+   
+}
+
+
+.menu-item {
+
+    transition: none;
+}
+
+ 
+ .container {
+  height: 140px;
+    justify-content: space-between;
+    gap:10px;
+}
+
+.change-photos figure {
+    width: 410px;
+    margin: 0;
+    text-align: center;
+}}
+/*----XXL------Ende---Responsive */
+
+
+
+
+/* &******Contact Form */
+.form-container{
+    margin:0 auto;
+}
+
+.contact {
+    margin: 10px 20px}
+
+.block__head {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_inner {
+    display: flex;
+    margin: 30px 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.contact__icon-box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin:20px auto;
+}
+.contact__item {
+    text-align: center;
+   min-width: 320px;
+   margin: 10px 0;
+}
+
+.contact__text a {
+
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: var(--base-font-dark);
+    text-decoration: none;
+    transition: 0.3s;
+  
+}
+.contact__text:hover a {
+    color: #4b4b4b;
+    text-decoration: underline;
+ 
+}
+.contact__form,
+.wpforms-field-container {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.contact__form input {
+   
+    padding: 20px;
+    text-align: start;
+ 
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #898888;
+    border: 1px solid #999999;
+}
+.contact__name ,
+.contact__email,
+.contact__number {
+    margin-bottom: 20px; 
+
+}
+.contact__form input{
+    display:block;
+    position: static;
+    
+}
+
+
+.contact__button {
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: 0.02em;
+     display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     2px 2px 2px 0px rgba(0,0,0,.1),
+     2px 2px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    border: none;
+    
+  
+  }
+
+
+  input {
+   
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    2px 2px 2px 0px rgba(0,0,0,.1),
+    2px 2px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    align-items: center;
+  margin: 0 0 50px;
+    border-radius: 5px;
+    height: auto;
+}
+.contact__textarea {
+    padding: 20px;
+    margin-bottom: 2px;
+    height: 180px;
+    resize: none;
+    font-family: "HelveticaNeueLTProLt", sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    border-radius: 5px;
+    color: #898888;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    2px 2px 2px 0px rgba(0,0,0,.1),
+    2px 2px 5px 0px rgba(0,0,0,.1);
+   
+}
+.wpforms-field-container input,
+.wpforms-field-container textarea{
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    2px 2px 2px 0px rgba(0,0,0,.1),
+    2px 2px 5px 0px rgba(0,0,0,.1)!important;
+    outline: none !important;
+    align-items: center !important;
+
+    border-radius: 5px !important;
+    height: 50px!important;
+    padding: 20px;
+    margin-bottom: 2px;
+    height: 180px;
+    resize: none;
+    font-family: "HelveticaNeueLTProLt", sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    border-radius: 5px;
+    color: #898888;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    2px 2px 2px 0px rgba(0,0,0,.1),
+    2px 2px 5px 0px rgba(0,0,0,.1);
+
+}
+ 
+.wpforms-field-container textarea{ 
+    height: 150px!important;}
+
+input[type=submit],
+.wpforms-container-full button[type=submit] {
+  
+    background: var(--base-beige-hover) !important;
+    font-size: 1rem;
+    font-weight: 600 !important;
+    color: var(--base-font-color)!important;
+    border:0 none;
+    cursor:pointer;
+  
+    display: block;
+    width: 100%;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    2px 2px 2px 0px rgba(0,0,0,.1),
+    2px 2px 5px 0px rgba(0,0,0,.1)!important;
+    outline: none !important;
+    align-items: center !important;
+
+    border-radius: 5px !important;
+    
+}
+
+
+
+
+/* Footer*/
+
+
+.footer {
+    position: relative;
+    min-width: 320px;
+    background: var(--base-blue-max);
+    min-height: 100px;
+   
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  
+  .footer-menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    padding: 0;
+    
+  
+  }
+  
+  .footer-menu li {
+    list-style: none;
+  }
+  
+  .social-links:first-child a {
+        text-decoration: none;
+  }
+
+  
+ 
+.social-icon__link {
+    
+    font-size: 1.8rem;
+    color: var(--base-beige);
+    margin: 10px;
+    display: inline-block;
+    transition: 0.5s;
+    opacity: 0.80;
+}
+.social-icon__link:hover
+
+  {
+    transform: translateY(-10px);
+    text-decoration: none;
+    opacity: 1;
+  }
+
+
+
+  .footer-menu a {
+    font-size: 1.2rem;
+    color: var(--base-beige);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .footer-menu a:first-child:hover {
+      opacity: 1;
+      text-decoration: none;
+      transform: none;
+  }
+  
+  
+  .copyright {
+   color: var(--base-beige);
+   opacity: 0.75;
+   font-size: 0.7rem;
+  margin: 15px 0 10px 0;
+   font-weight: 300;
+  }
+  
+  
+  .contact-form-wrapper {
+    display: flex;
+  }  
+  
+  
+  
+/* ******************
+ * TO TOP
+ */
+
+ #to-top {
+position: fixed;
+    right: 5px;
+    bottom: 0;
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 900;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    background-color: var(--base-beige-hover);
+    transition: opacity 200ms ease-in-out, transform 200ms linear;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    2px 2px 2px 0px rgba(0,0,0,.1),
+    2px 2px 5px 0px rgba(0,0,0,.1);
+   outline: none;
+
+   border: none;
+ }
+#to-top::after {
+    content: "\FF3E";
+    width: 1em;
+    height: 1em;
+    color:var(--base-font-color);
+}
+#to-top:hover {
+    transform: translateY(-10%);
+}
+
+#to-top.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+/**Anpassunf Wordpress*/
+
+body .is-layout-flex {
+    display: flex;
+    margin: 200px 0 50px;
+       
+       
+    }
+    .myicon.icon-phone,
+    .myicon.icon-office,
+    .myicon.icon-envelop{
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        
+    }
+    /** box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            align-items: center;
+            padding: 10px 25px;
+            margin: 10px 0;
+            border-radius: 2%;
+            height: auto;*/
+      
+      
+          .paragraph{
+                text-align: justify;
+            }
+
+            h1.has-text-align-center {
+                text-align: center;
+            }
+            .body.is-layout-flex {
+                display: flex;
+                margin: 50px 0;}
+
+/*WP Carousel*/
+
+
+
+
+
+            
+
+
+
+
+
+
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+  }
+
+  .screen-reader-text:focus {
+    background-color: #eee;
+    clip: auto !important;
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
+}
