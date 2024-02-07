@@ -19,6 +19,8 @@
                 <?php endif; ?>
 
                 
+
+                
         </div>
 
        
@@ -44,7 +46,12 @@
         <div class="copyright">
             <?php 
                 echo sprintf(__('&copy; %1$s, %2$s'), date('Y'), get_bloginfo('name')); ?>
-         </div>
+              <span>
+                    <?php _e('Сайт разработала:'); ?>
+                    <a href='https://www.schedl.com' target='_blank' title='Екатерина Шедльбергер'>Екатерина Шедльбергер</a>
+            </span>
+    
+    </div>
     
 </footer>
 
